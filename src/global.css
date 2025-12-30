@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", system-ui, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+.light-mode,
+.dark-mode {
+  min-height: 100%;
+  background: var(--fondo-principal);
+  color: var(--texto-principal);
+}
+
+.light-mode {
+  --fondo-principal: #ffffff;
+  --texto-principal: #222222;
+  --panel-principal: #ffffff;
+  --panel-secundario: #fafafa;
+  --borde: #1a1a1a1a;
+  --texto-atenuado: #000000;
+  --efecto-hover: #0202020a;
+  --efecto-hover-solido: #0000002d;
+  --color-acento: #3dcd66;
+  --color-leido: #34b7f1;
+  --imagen-fondo-chat: url("./Assets/Images/FondoWhatsApp.jpg");
+  --burbuja-propia: #d3fab5;
+  --burbuja-otra: #ffffff;
+}
+
+.dark-mode {
+  --fondo-principal: #0b141a;
+  --texto-principal: #e9edef;
+  --panel-secundario: #090f13;
+  --borde: #ffffff14;
+  --texto-atenuado: #e9edef96;
+  --efecto-hover: #ffffff0d;
+  --efecto-hover-solido: #ffffff2d;
+  --color-acento: #25d366;
+  --color-leido: #34b7f1;
+  --imagen-fondo-chat: url("./Assets/Images/FondoWhatsAppDark.jpg");
+  --burbuja-propia: #004c3f;
+  --burbuja-otra: #0f1c24;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: clamp(50px, 8vw, 72px);
+  background: var(--panel-secundario);
+  border-right: 1px solid var(--borde);
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+
+.app-content {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.chat-list-panel {
+  width: clamp(280px, 25vw, 420px);
+  min-width: 280px;
+  background: var(--panel-secundario);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-list-header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  padding: 12px;
+  border-bottom: 1px solid var(--borde);
+  background: var(--panel-secundario);
+  flex-shrink: 0;
+}
+
+.chat-screen-panel {
+  flex: 1;
+  min-width: 0;
+  background: var(--panel-secundario);
+  overflow: hidden;
+}
+
+.chat-screen-wrapper {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.empty-chat {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: var(--texto-atenuado);
+  padding: clamp(16px, 4vw, 24px);
+  text-align: center;
+  font-size: clamp(13px, 3vw, 16px);
+  overflow: auto;
+}
+/* Mobile Responsive - < 700px */
+@media (max-width: 699px) {
+  .chat-list-panel {
+    width: 100%;
+    min-width: unset;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chat-list-panel.hidden-mobile {
+    display: none;
+  }
+
+  .chat-screen-wrapper {
+    width: 100%;
+  }
+
+  .chat-screen-wrapper.hidden-mobile {
+    display: none;
+  }
+}
