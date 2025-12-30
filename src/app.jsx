@@ -10,7 +10,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    navigate("/chat", { replace: true });
+    navigate("/chat");
   }, []);
 
   if (loading) {
