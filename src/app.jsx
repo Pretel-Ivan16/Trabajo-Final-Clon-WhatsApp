@@ -1,17 +1,12 @@
-import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import ChatScreen from "./screens/ChatScreen/ChatScreen";
 import LoadingScreen from "./screens/LoadingScreen/LoadingScreen";
 import ChatDownload from "./components/ChatDownload/ChatDownload";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 export default function App() {
-  const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    navigate("/chat");
-  }, []);
 
   if (loading) {
     return <LoadingScreen onFinish={() => setLoading(false)} />;
