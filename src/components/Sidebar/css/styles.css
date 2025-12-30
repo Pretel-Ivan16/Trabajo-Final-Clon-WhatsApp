@@ -1,0 +1,136 @@
+.sidebar-nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+  background-color: var(--efecto-hover);
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--borde);
+  align-self: center;
+  margin: 0;
+}
+
+.sidebar-buttons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar-list-main,
+.sidebar-list-archive,
+.sidebar-list-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.sidebar-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  list-style: none;
+}
+
+.button-sidebar {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: inherit;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s ease;
+}
+
+@media (max-width: 500px) {
+  .button-sidebar {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 300px) {
+  .button-sidebar {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.button-sidebar:hover {
+  background: var(--efecto-hover);
+}
+
+.button-sidebar:focus-visible {
+  outline: 2px solid var(--color-acento);
+  outline-offset: 2px;
+}
+
+.button-sidebar i {
+  font-size: 20px;
+  color: inherit;
+  opacity: 0.95;
+}
+
+@media (max-width: 500px) {
+  .button-sidebar i {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 300px) {
+  .button-sidebar i {
+    font-size: 16px;
+  }
+}
+
+.sidebar-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  .sidebar-avatar {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 300px) {
+  .sidebar-avatar {
+    width: 24px;
+    height: 24px;
+  }
+}

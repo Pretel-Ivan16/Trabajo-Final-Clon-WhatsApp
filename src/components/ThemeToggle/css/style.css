@@ -1,0 +1,19 @@
+.theme-toggle {
+  border: 1px solid var(--borde);
+  background: var(--efecto-hover);
+  color: inherit;
+  border-radius: 999px;
+  padding: 10px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.theme-toggle:hover {
+  background: var(--color-acento);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--color-acento);
+  outline-offset: 2px;
+}

@@ -1,0 +1,129 @@
+.searchbar-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.searchbar-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 56px;
+  gap: 12px;
+}
+
+.searchbar-tittle {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  color: var(--texto-principal);
+}
+
+@media (max-width: 500px) {
+  .searchbar-tittle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 300px) {
+  .searchbar-tittle {
+    font-size: 14px;
+  }
+}
+
+.reference-whatsapp {
+  text-decoration: none;
+  color: inherit;
+}
+
+.reference-whatsapp:hover {
+  color: var(--color-acento);
+}
+
+.searchbar-header-container i {
+  font-size: 18px;
+  color: var(--texto-principal);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.searchbar-header-container i:first-of-type {
+  margin-left: auto;
+}
+
+.searchbar-header-container i:hover {
+  background: var(--efecto-hover);
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  background: var(--efecto-hover);
+}
+
+.search-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--texto-atenuado);
+  flex: 0 0 32px;
+}
+
+.search-icon i {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: inherit;
+  font-size: 14px;
+}
+
+.search-input::placeholder {
+  color: var(--texto-atenuado);
+}
+
+.search-clear {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--texto-atenuado);
+  cursor: pointer;
+  padding: 0;
+  border-radius: 8px;
+  flex: 0 0 32px;
+}
+
+.search-clear i {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.search-clear:hover {
+  background: var(--efecto-hover);
+  color: inherit;
+}
+
+.search-clear:focus-visible {
+  outline: 2px solid var(--color-acento);
+  outline-offset: 2px;
+}
