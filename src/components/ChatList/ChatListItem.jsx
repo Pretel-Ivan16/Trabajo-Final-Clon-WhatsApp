@@ -1,14 +1,6 @@
 import React from "react";
-import { useAppContext } from "../../context/AppContext";
 
 export default function ChatListItem({ chat, onClick }) {
-  const { setShowChatList } = useAppContext();
-
-  const handleClick = () => {
-    onClick();
-    setShowChatList(false);
-  };
-
   const getStatusIconClass = (status) => {
     if (status === "read") return "bi-check2-all";
     if (status === "delivered") return "bi-check2";
@@ -51,7 +43,7 @@ export default function ChatListItem({ chat, onClick }) {
       <button
         type="button"
         className="chat-list-button"
-        onClick={handleClick}
+        onClick={onClick}
         aria-label={`Abrir chat con ${chat.name}`}
       >
         <img
