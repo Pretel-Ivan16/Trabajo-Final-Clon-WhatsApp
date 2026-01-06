@@ -20,18 +20,6 @@
   color: var(--texto-principal);
 }
 
-@media (max-width: 500px) {
-  .searchbar-tittle {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 300px) {
-  .searchbar-tittle {
-    font-size: 14px;
-  }
-}
-
 .reference-whatsapp {
   text-decoration: none;
   color: inherit;
@@ -126,4 +114,17 @@
 .search-clear:focus-visible {
   outline: 2px solid var(--color-acento);
   outline-offset: 2px;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .searchbar-tittle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 300px) {
+  .searchbar-tittle {
+    font-size: 14px;
+  }
 }

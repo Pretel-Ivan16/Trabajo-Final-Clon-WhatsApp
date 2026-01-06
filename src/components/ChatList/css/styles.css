@@ -12,18 +12,6 @@
   overflow: auto;
 }
 
-@media (max-width: 500px) {
-  .chat-list-items {
-    padding: 4px;
-  }
-}
-
-@media (max-width: 300px) {
-  .chat-list-items {
-    padding: 3px;
-  }
-}
-
 .chat-list-item {
   margin: 0;
 }
@@ -40,20 +28,6 @@
   color: inherit;
   cursor: pointer;
   text-align: left;
-}
-
-@media (max-width: 500px) {
-  .chat-list-button {
-    gap: 10px;
-    padding: 8px 8px;
-  }
-}
-
-@media (max-width: 300px) {
-  .chat-list-button {
-    gap: 6px;
-    padding: 6px 6px;
-  }
 }
 
 .chat-list-button:hover {
@@ -136,4 +110,26 @@
   font-size: 12px;
   font-weight: 800;
   padding: 0 7px;
+}
+
+@media (max-width: 500px) {
+  .chat-list-items {
+    padding: 4px;
+  }
+
+  .chat-list-button {
+    gap: 10px;
+    padding: 8px 8px;
+  }
+}
+
+@media (max-width: 300px) {
+  .chat-list-items {
+    padding: 3px;
+  }
+
+  .chat-list-button {
+    gap: 6px;
+    padding: 6px 6px;
+  }
 }
