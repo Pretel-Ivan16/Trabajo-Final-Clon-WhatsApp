@@ -21,7 +21,7 @@ En el progreso de toda la cursada aprendimos lo que es ser un Developer Web Full
 - Error 404 de vercel corregido con la ayuda de un amigo programador.
 - Readme.md estilizado con Copilot.
 
-## ¿Por qué el TP no se pudo a tiempo?
+## ¿Por qué el TP no se pudo entregar a tiempo?
 
 - Error 404 de vercel (Problema N°9).
 
