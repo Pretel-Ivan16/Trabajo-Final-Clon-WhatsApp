@@ -13,6 +13,7 @@ En el progreso de toda la cursada aprendimos lo que es ser un Developer Web Full
 - Para el Clon de WhatsApp la biblioteca usada fue React.
 - Asistencia en clases 24/30. Clases vistas 30/30.
 - Árbol de directorios y archivos creado por mí, basado en lo que se vió en clases.
+- Componentes creados con los principios SOLID, particularmente con la S de Single Responsability.
 - Íconos de la página agregados con libreria de Bootstrap.
 - Usuarios, chats y mensajes traidos de la serie de SUITS.
 - Conversaciones creadas con IA para agilizar otras tareas.
