@@ -2,7 +2,7 @@
 
 ## 📋 Descripción General
 
-En el progreso de toda la cursada aprendimos lo que es ser un Developer Web Full Stack y todas las herramientas para el desarrollo de una web. En las primeras clases dimos una breve introducción para todo aquel que recién se adentraban al mundo de la programación. Seguimos con HTML, explicando y ordenando las diversas etiquetas que nos da. Continuamos con CSS para dar estilos a nuestro HTML a través de selectores. Vimos JavaScript para dar funcionalidades a nuestra página web. Por último utilizamos la biblioteca de React para utilizar el DOM virtual que nos proporciona para dar facilidades de uso en el DOM tradicional de JS.
+En el progreso de toda la cursada aprendimos lo que es ser un Developer Web Frontend y todas las herramientas para el desarrollo de una web. En las primeras clases dimos una breve introducción para todo aquel que recién se adentraban al mundo de la programación. Seguimos con HTML, explicando y ordenando las diversas etiquetas que nos da. Continuamos con CSS para dar estilos a nuestro HTML a través de selectores. Vimos JavaScript para dar funcionalidades a nuestra página web. Por último utilizamos la biblioteca de React para utilizar el DOM virtual que nos proporciona para dar facilidades de uso en el DOM tradicional de JS.
 
 ---
 
